@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+        /* Style for the to-do list container */
+        #todo-list {
+            width: 300px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        /* Style for the list items */
+        li {
+            list-style: none;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        /* Style for the done items */
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-list">
+        <h2>To-Do List</h2>
+        <input type="text" id="task-input" placeholder="Enter a task">
+        <button onclick="addTask()">Add</button>
+        <ul id="task-list">
+            <!-- Task items will be added dynamically here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
